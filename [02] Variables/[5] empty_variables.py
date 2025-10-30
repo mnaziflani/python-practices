@@ -9,7 +9,7 @@ For example:
 score = None  # Score hasn't been calculated yet
 name = None   # Name hasn't been entered yet
 """
-from selenium.webdriver.support.expected_conditions import none_of
+
 
 # Type your code below
 nothing = None # Remember Python is case sensitive

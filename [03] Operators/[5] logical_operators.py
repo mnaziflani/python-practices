@@ -41,3 +41,11 @@ False
     # Fill in the age variable with 20
     # Fill in the has_license variable with True
     # Fill in the minimum age requirement in the comparison
+
+age = 20
+has_license = True
+
+result = age >= 18 and has_license
+
+# Don't change the line below
+print("Eligible to drive:", result)

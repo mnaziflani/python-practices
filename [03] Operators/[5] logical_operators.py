@@ -49,3 +49,47 @@ result = age >= 18 and has_license
 
 # Don't change the line below
 print("Eligible to drive:", result)
+
+"""
+Logical operators have a special table called "Truth table" that shows what the combination of logical operators returns.
+
+Truth table for the and operator:
+
+a	     b	   a and b
+False	False	False
+False	True	False
+True	False	False
+True	True	True
+The only way to get a True for the and operator is if both a and b are True
+
+Truth table for the or operator:
+
+a	      b  	a or b
+False	False	False
+False	True	True
+True	False	True
+True	True	True
+In this case, to get a True result, either a or b should be True.
+
+Truth table for the not operator:
+
+a	    not a
+False	True
+True	False
+Here the value of a is reversed. If a is False then not a is True
+"""
+
+# Replace the values of variables b1 and b2 with numbers so that b3 evaluates to True.
+# b3 will be True when the multiplication of b1 and b2 is greater than their addition.
+
+# Replace the values with numbers
+b1 = 10
+b2 = 20
+
+# This line checks if b1 * b2 is greater than b1 + b2
+b3 = (b1 * b2) > (b1 + b2)
+
+# Don't change the line below
+print(f"b3 = {b3}")
+b4 = not b3
+print(f"b4 = {b4}")

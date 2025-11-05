@@ -42,6 +42,11 @@ age = int(input("Enter age: "))
 has_license = input().lower() == "true"
 has_insurance = input().lower() == "true" # How does this work? Meaning how does it convert into boolean value and not a string?
 
+"""
+"true" == "true" → this is a string comparison
+Since both sides are equal strings, the expression returns the boolean value True.
+The boolean (True or False) is not from the input itself — it’s the result of the comparison.
+"""
 
 # Complete this line to check if all conditions are met
 result = has_license  and age >= 18 and has_insurance

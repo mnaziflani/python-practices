@@ -35,5 +35,25 @@ print(result2)  # True
 """
 
 """
+Complex Example with Both AND and OR: 
+Sometimes you need conditions that combine both operators. Here's a practical example:
 
+# Checking if we CAN'T accept a job application
+# We reject if: (no experience AND no degree) OR doesn't meet age requirement
+
+has_experience = False
+has_degree = False
+meets_age = True
+
+# Complex condition using both AND and OR
+reject_application = (not has_experience and not has_degree) or not meets_age
+
+print(reject_application)  # True (rejected because no experience AND no degree)
+
+# This can also be written using De Morgan's Laws:
+# "NOT accepted" = NOT(experience OR degree) AND meets age
+accept_application = (has_experience or has_degree) and meets_age
+reject_application2 = not accept_application
+
+print(reject_application2)  # True (same result, different logic)
 """

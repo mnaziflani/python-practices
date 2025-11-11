@@ -17,3 +17,23 @@ result2 = (not number >= 1) or (not number <= 10)
 print(result1)  # True
 print(result2)  # True
 """
+
+"""
+Second Law: not (A or B) is the same as (not A) and (not B)
+For example:
+
+# Checking if a person is NOT (a student or employed)
+is_student = False
+is_employed = False
+
+# These two expressions are equivalent:
+result1 = not (is_student or is_employed)
+result2 = (not is_student) and (not is_employed)
+
+print(result1)  # True
+print(result2)  # True
+"""
+
+"""
+
+"""
